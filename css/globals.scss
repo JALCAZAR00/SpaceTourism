@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #0b0d17;
+    --secondary-color: #D0D6F9;   
+}
+
+
+@mixin backgroundImage(){
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    body{
+        font-family: 'Bellefair', 'Wix Madefor Text', sans-serif;
+        font-size: 1.6rem;
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        @include backgroundImage();
+    }
+}
+
+#body_dest_moon{
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+}
+.inactive{
+    display: none;
+}

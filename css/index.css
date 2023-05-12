@@ -1,0 +1,267 @@
+:root {
+  --primary-color: #0b0d17;
+  --secondary-color: #D0D6F9;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: "Bellefair", "Wix Madefor Text", sans-serif;
+  font-size: 1.6rem;
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#body_dest_moon {
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+
+.inactive {
+  display: none;
+}
+
+header nav .nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+header nav .nav__container__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav .nav__container__logo img {
+  width: 40px;
+  height: 40px;
+}
+header nav .nav__container__menu {
+  cursor: pointer;
+}
+
+main .menu_mobile__container {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+main .menu_mobile__container__closeIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 15vh;
+  padding: 0 12px;
+}
+main .menu_mobile__container__closeIcon p {
+  width: 35px;
+  height: 35px;
+  font-size: 4.4rem;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+main .menu_mobile__container__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  padding: 16px 24px;
+}
+main .menu_mobile__container__list ul li {
+  list-style: none;
+}
+main .menu_mobile__container__list ul li a {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main .section__container__text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+  color: white;
+}
+main .section__container__text h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+main .section__container__text h2 {
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .section__container__text p {
+  font-family: "Wix Madefor Text";
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+main .section__container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 24px 0;
+}
+main .section__container__button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10em;
+  background-color: white;
+}
+main .section__container__button a p {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+main .section__container__moon {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  color: white;
+}
+main .section__container__moon h1 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+main .section__container__moon img {
+  width: 200px;
+  height: 200px;
+}
+main .section__container__moon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+main .section__container__moon ul li {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  list-style: none;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+main .section__container__moon .text {
+  border-bottom: 1px solid var(--secondary-color);
+}
+main .section__container__moon .text h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .section__container__moon .text p {
+  font-family: "Wix Madefor Text";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: var(--secondary-color);
+}
+main .section__container__moon .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+main .section__container__moon .info .first_info, main .section__container__moon .info .second_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+main .section__container__moon .info .first_info h3, main .section__container__moon .info .second_info h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+main .section__container__moon .info .first_info p, main .section__container__moon .info .second_info p {
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}

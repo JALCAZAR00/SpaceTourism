@@ -1,0 +1,164 @@
+main{
+    .menu_mobile__container{
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        backdrop-filter: blur(50px);
+        &__closeIcon{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 15vh;
+            padding: 0 12px;
+            p{
+                width: 35px;
+                height: 35px;
+                font-size: 4.4rem;
+                color: #c2c2c2;
+                cursor: pointer;
+            }
+        }
+        &__list{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                padding: 16px 24px;
+                li{
+                    list-style: none;
+                    a{
+                        font-size: 1.4rem;
+                        letter-spacing: 2px;
+                        color: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .section__container{
+        &__text{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px 24px ;
+            color: white;
+            h1{
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--secondary-color);
+            }
+            h2{ 
+                font-size: 8rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: 'Wix Madefor Text';
+                font-size: 1.6rem;
+                color: var(--secondary-color);
+            }
+        }
+        &__button{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 24px 0;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                color: #000;
+                text-decoration: none;
+                border-radius: 10em;
+                background-color: white;
+                p{
+                    font-size: 3.6rem;
+                    font-weight: 400;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+    .section__container__moon{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 16px 24px;
+        color: white;
+        h1{
+            font-family: 'Bellefair';
+            font-weight: 400;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        ul{
+            display: flex;
+            gap: 16px;
+            li{
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                list-style: none;
+                text-transform: uppercase;
+                color: var(--secondary-color);
+            }
+        }
+        .text{
+            border-bottom: 1px solid var(--secondary-color);;
+            h2{
+                font-size: 6rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: 'Wix Madefor Text';
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 24px;
+                color: var(--secondary-color);
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .first_info, .second_info{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    letter-spacing: 1px;  
+                    text-transform: uppercase;
+                    color: var(--secondary-color);
+                }
+                p{
+                    font-size: 2.6rem;
+                    font-weight: 400;
+                    letter-spacing: 1px;  
+                    text-transform: uppercase;
+                    color: white; 
+                }
+            }
+        }
+    }
+}
