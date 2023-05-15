@@ -800,7 +800,7 @@ main .technology__container #capsule {
     line-height: 32px;
   }
 }
-@media (min-width: 1339px) {
+@media (min-width: 1400px) {
   html body {
     background-image: url("../assets/home/background-home-desktop.jpg");
   }
