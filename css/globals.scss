@@ -1,6 +1,12 @@
 :root{
+    //Colores
     --primary-color: #0b0d17;
-    --secondary-color: #D0D6F9;   
+    --secondary-color: #D0D6F9;  
+    --font-color: #c0c1c4;
+    //Fuentes
+    --primary-font: 'Barlow', sans-serif;
+    --secondary-font: 'Barlow Condensed', sans-serif;
+    --alternative-font: 'Bellefair', serif;
 }
 
 
@@ -16,17 +22,28 @@
 }
 html{
     font-size: 62.5%;
-    body{
-        font-family: 'Bellefair', 'Wix Madefor Text', sans-serif;
+    body{    
+        font-family: var(--primary-font);
         font-size: 1.6rem;
         background-image: url('../assets/home/background-home-mobile.jpg');
         @include backgroundImage();
     }
+    #body_dest_moon{
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+
+    #body__crew{
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+    }
+
+    #body__technology{
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
+    }
 }
 
-#body_dest_moon{
-    background-image: url('../assets/destination/background-destination-mobile.jpg');
-}
+
+
+
 .inactive{
     display: none;
 }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&family=Barlow:wght@200;300;400;500&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body id="body__crew">
+  <header>
+    <nav>
+      <div class="nav__container">
+        <a href="./index.html" class="nav__container__logo"><img src="./assets/shared/logo.svg" alt="logo"></a>
+        <img src="./assets/shared/icon-hamburger.svg" class="nav__container__menu" alt="icon_menu"></img>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu_mobile__container">
+      <div class="menu_mobile__container__closeIcon"><p id="close_menu__mobile">&times;</p></div>
+      <div class="menu_mobile__container__list">
+        <ul>
+          <li><a href="index.html"><span>00</span> Home</a></li>
+          <li><a href="./destination.html"><span>01</span> Destination</a></li>
+          <li class="selected__button"><a href="./crew.html"><span>02</span> Crew</a></li>
+          <li><a href="./technology.html"><span>03</span> Technology</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="crew__container">
+      <h1><span>02</span> Meet your crew</h1>
+    <!-------------------------------------------------------------------------------- -->
+      <article class="crew" id="commander">
+          <figure class="crew__image">
+            <img src="./assets/crew/image-douglas-hurley.webp" alt="Commander">
+          </figure>
+          <ul class="crew__buttons">
+            <li class="first_btn selected_button"></li>
+            <li class="second_btn"></li>
+            <li class="third_btn"></li>
+            <li class="four_btn"></li>
+          </ul>    
+          <div class="crew__text">
+            <h2>Commander</h2>
+            <h3>Douglas Hurley</h3>
+            <p>
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+              and former NASA astronaut. He launched into space for the third time as 
+              commander of Crew Dragon Demo-2.
+            </p>
+          </div>    
+      </article>
+
+    <!-------------------------------------------------------------------------------- -->
+      <article class="crew" id="specialist">
+        <figure class="crew__image">
+          <img src="./assets/crew/image-mark-shuttleworth.webp" alt="Specialist">
+        </figure>
+        <ul class="crew__buttons">
+          <li class="first_btn"></li>
+          <li class="second_btn selected_button"></li>
+          <li class="third_btn"></li>
+          <li class="four_btn"></li>
+        </ul>
+        <div class="crew__text">
+          <h2>Mission Specialist</h2>
+          <h3>Mark Shuttleworth</h3>
+          <p>
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.
+          </p>
+        </div>
+      </article>  
+
+    <!-------------------------------------------------------------------------------- -->
+      <article class="crew" id="pilot">
+        <figure class="crew__image">
+          <img src="./assets/crew/image-victor-glover.webp" alt="Pilot">
+        </figure>
+        <ul class="crew__buttons">
+          <li class="first_btn"></li>
+          <li class="second_btn"></li>
+          <li class="third_btn selected_button"></li>
+          <li class="four_btn"></li>
+        </ul>
+        <div class="crew__text">
+          <h2>Pilot</h2>
+          <h3>Victor Glover</h3>
+          <p>
+            Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+            International Space Station. Glover is a commander in the U.S. Navy where 
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+            station systems flight engineer.
+          </p>
+        </div>
+      </article>
+
+    <!-------------------------------------------------------------------------------- -->
+      <article class="crew" id="engineer">
+        <figure class="crew__image">
+          <img src="./assets/crew/image-anousheh-ansari.webp" alt="Flight_Engineer">
+        </figure>
+        <ul class="crew__buttons">
+          <li class="first_btn"></li>
+          <li class="second_btn"></li>
+          <li class="third_btn"></li>
+          <li class="four_btn selected_button"></li>
+        </ul>
+        <div class="crew__text">
+          <h2>Flight Engineer</h2>
+          <h3>Anousheh Ansari</h3>
+          <p>
+            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+            Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+            fly to the ISS, and the first Iranian in space.
+          </p>
+        </div>
+      </article>  
+    </section>
+    
+    
+    
+  </main>
+  <script src="index.js"></script>
+  <script src="./scripts/crew.controllers.js"></script>
+</body>
+</html>
