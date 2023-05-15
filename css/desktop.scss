@@ -2,6 +2,7 @@
     html{
        body{
             background-image: url('../assets/home/background-home-desktop.jpg');
+            max-height: 900px;
         } 
     }
     #body_dest_moon{
@@ -20,19 +21,19 @@
         .nav__container{
             padding: 64px 56px;
         }
-    }
+    }   
 
     main{
-        height: auto;
         .menu_mobile__container{
             position: absolute;
             top: 4.2vh;
             width: 830px;
             backdrop-filter: blur(50px);
-            background-color: #8080800e;
+            background-color: #80808021;
             &__list{
                 ul{
                     gap: 48px;
+                    padding-right: 16px;
                     li{
                         a{
                             font-size: 1.6rem;
@@ -57,7 +58,7 @@
             &__text{
                 text-align: start;
                 gap: 24px;
-                padding: 100px 180px 24px;
+                padding: 100px 170px 24px;
                 h1{
                     font-size: 2.8rem;
                     letter-spacing: 6px;
@@ -72,12 +73,15 @@
             &__button{
                 padding: 13em 0 0 0;
                 a{
-                    width: 270px;
-                    height: 270px;
+                    width: 285px;
+                    height: 285px;
                     border-radius: 10em;
                     p{
                         font-size: 3.4rem;
                     }
+                }
+                a:hover{
+                    box-shadow: 0 0 50px 1px white;
                 }
             }
         }

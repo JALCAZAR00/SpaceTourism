@@ -1,5 +1,4 @@
 main{
-    min-height: 90vh;
     .menu_mobile__container{
         position: fixed;
         display: none;
@@ -9,6 +8,7 @@ main{
         width: 65%;
         height: 100vh;
         backdrop-filter: blur(35px);
+        animation: slide .5s linear forwards;
         &__closeIcon{
             display: flex;
             justify-content: flex-end;
@@ -43,6 +43,14 @@ main{
                         }
                     }
                 }
+            }
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-240px);
             }
         }
     }
@@ -126,12 +134,29 @@ main{
             flex-direction: column;
             gap: 12px;
             img{
+                display: block;
                 width: 180px;
                 height: 180px;
                 margin-bottom: 12px;
                 border-radius: 10em;
-                margin: 0 auto;
                 box-shadow: 0 0 10px 1px #1a202b;
+                animation: slide 3s linear forwards, spin 180s linear infinite;
+            }
+            @keyframes spin {
+                0% {
+                  transform: rotate(0deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+            }
+            @keyframes slide {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
             }
             &__list{
                 display: flex;
@@ -223,6 +248,17 @@ main{
                 img{
                     width: 200px;
                     height: 232px;
+                    animation: slide 1s linear forwards;
+                }
+                @keyframes slide {
+                    0% {
+                        transform: translateX(50px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
                 }
             }
             &__buttons{

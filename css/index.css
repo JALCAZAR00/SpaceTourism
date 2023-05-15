@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100vh;
 }
 html body {
   font-family: var(--primary-font);
@@ -59,9 +60,6 @@ header .nav__container__menu {
   cursor: pointer;
 }
 
-main {
-  min-height: 90vh;
-}
 main .menu_mobile__container {
   position: fixed;
   display: none;
@@ -72,6 +70,8 @@ main .menu_mobile__container {
   height: 100vh;
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
+  -webkit-animation: slide 0.5s linear forwards;
+          animation: slide 0.5s linear forwards;
 }
 main .menu_mobile__container__closeIcon {
   display: -webkit-box;
@@ -115,6 +115,26 @@ main .menu_mobile__container__list ul li a {
 }
 main .menu_mobile__container__list ul li a span {
   font-weight: 600;
+}
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-240px);
+            transform: translateX(-240px);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-240px);
+            transform: translateX(-240px);
+  }
 }
 main .section__container__text {
   text-align: center;
@@ -219,13 +239,43 @@ main .container__destination .destination, main .technology__container .destinat
   gap: 12px;
 }
 main .container__destination .destination img, main .technology__container .destination img, main .crew__container .destination img {
+  display: block;
   width: 180px;
   height: 180px;
   margin-bottom: 12px;
   border-radius: 10em;
-  margin: 0 auto;
   -webkit-box-shadow: 0 0 10px 1px #1a202b;
           box-shadow: 0 0 10px 1px #1a202b;
+  -webkit-animation: slide 3s linear forwards, spin 180s linear infinite;
+          animation: slide 3s linear forwards, spin 180s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main .container__destination .destination__list, main .technology__container .destination__list, main .crew__container .destination__list {
   display: -webkit-box;
@@ -333,6 +383,20 @@ main .crew__container .crew__image {
 main .crew__container .crew__image img {
   width: 200px;
   height: 232px;
+  -webkit-animation: slide 1s linear forwards;
+          animation: slide 1s linear forwards;
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 main .crew__container .crew__buttons {
   display: -webkit-box;
@@ -524,8 +588,8 @@ main .technology__container #capsule {
     padding: 24px 40px;
   }
   header .nav__container__logo img {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
   header .nav__container__menu {
     display: none;
@@ -803,6 +867,7 @@ main .technology__container #capsule {
 @media (min-width: 1400px) {
   html body {
     background-image: url("../assets/home/background-home-desktop.jpg");
+    max-height: 900px;
   }
   #body_dest_moon {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
@@ -816,19 +881,17 @@ main .technology__container #capsule {
   header .nav__container {
     padding: 64px 56px;
   }
-  main {
-    height: auto;
-  }
   main .menu_mobile__container {
     position: absolute;
     top: 4.2vh;
     width: 830px;
     -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
-    background-color: rgba(128, 128, 128, 0.0549019608);
+    background-color: rgba(128, 128, 128, 0.1294117647);
   }
   main .menu_mobile__container__list ul {
     gap: 48px;
+    padding-right: 16px;
   }
   main .menu_mobile__container__list ul li a {
     font-size: 1.6rem;
@@ -852,7 +915,7 @@ main .technology__container #capsule {
   main .section__container__text {
     text-align: start;
     gap: 24px;
-    padding: 100px 180px 24px;
+    padding: 100px 170px 24px;
   }
   main .section__container__text h1 {
     font-size: 2.8rem;
@@ -868,12 +931,16 @@ main .technology__container #capsule {
     padding: 13em 0 0 0;
   }
   main .section__container__button a {
-    width: 270px;
-    height: 270px;
+    width: 285px;
+    height: 285px;
     border-radius: 10em;
   }
   main .section__container__button a p {
     font-size: 3.4rem;
+  }
+  main .section__container__button a:hover {
+    -webkit-box-shadow: 0 0 50px 1px white;
+            box-shadow: 0 0 50px 1px white;
   }
   main .container__destination, main .crew__container, main .technology__container {
     text-align: start;
