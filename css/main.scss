@@ -64,15 +64,12 @@ main{
             color: white;
             h1{
                 width: 100%;
-                position: relative;
                 font-size: 1.6rem;
                 font-weight: 200;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 font-family: var(--secondary-font);
                 color: var(--secondary-color);
-                animation: write 2s linear forwards;
-                animation-delay: 1s; /* Agrega un retraso de 1 segundo */
             }
             h2{ 
                 font-size: 7.8rem;
