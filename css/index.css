@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-color: #0b0d17;
   --secondary-color: #D0D6F9;
@@ -148,14 +149,55 @@ main .section__container__text {
   gap: 20px;
   padding: 24px 25px;
   color: white;
+  /* Define la animación para detener el cursor al final del texto */
 }
 main .section__container__text h1 {
+  width: 0;
+  position: relative;
   font-size: 1.6rem;
   font-weight: 200;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
+  -webkit-animation: write 2s linear forwards;
+          animation: write 2s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; /* Agrega un retraso de 1 segundo */
+}
+main .section__container__text h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #fff));
+  background: linear-gradient(to right, transparent 50%, #fff 50%);
+  background-size: 200% 100%;
+}
+main .section__container__text h1::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  opacity: 0;
+}
+@-webkit-keyframes write {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes write {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 main .section__container__text h2 {
   font-size: 7.8rem;
@@ -246,8 +288,8 @@ main .container__destination .destination img, main .technology__container .dest
   border-radius: 10em;
   -webkit-box-shadow: 0 0 10px 1px #1a202b;
           box-shadow: 0 0 10px 1px #1a202b;
-  -webkit-animation: slide 3s linear forwards, spin 180s linear infinite;
-          animation: slide 3s linear forwards, spin 180s linear infinite;
+  -webkit-animation: slide 1s linear forwards, spin 180s linear infinite;
+          animation: slide 1s linear forwards, spin 180s linear infinite;
 }
 @-webkit-keyframes spin {
   0% {
