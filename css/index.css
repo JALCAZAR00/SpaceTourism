@@ -40,6 +40,12 @@ html #body__technology {
   display: none;
 }
 
+header {
+  position: relative;
+}
+header .line {
+  display: none;
+}
 header .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,6 +893,15 @@ main .technology__container #capsule {
   header .nav__container {
     padding: 64px 56px;
   }
+  header .line {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    top: 10vh;
+    left: 13vw;
+    width: 473px;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.3764705882);
+  }
   main .menu_mobile__container {
     position: absolute;
     top: 4.2vh;
@@ -925,11 +940,13 @@ main .technology__container #capsule {
   }
   main .section__container__text h1 {
     font-size: 2.8rem;
+    font-weight: 400;
     letter-spacing: 6px;
     padding-left: 8px;
   }
   main .section__container__text p {
     font-size: 1.8rem;
+    font-weight: 400;
     line-height: 32px;
     padding: 0 150px 0 8px;
   }
@@ -937,8 +954,8 @@ main .technology__container #capsule {
     padding: 13em 0 0 0;
   }
   main .section__container__button a {
-    width: 285px;
-    height: 285px;
+    width: 275px;
+    height: 275px;
     border-radius: 10em;
   }
   main .section__container__button a p {

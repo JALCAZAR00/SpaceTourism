@@ -21,7 +21,19 @@
         .nav__container{
             padding: 64px 56px;
         }
-    }   
+    }  
+
+    header{
+        .line{
+            z-index: 2;
+            display: inline-block;
+            position: absolute;
+            top: 10vh;
+            left: 13vw;
+            width: 473px;
+            border-bottom: 1px solid rgba(194, 194, 194, 0.3764705882);
+        }
+    }
 
     main{
         .menu_mobile__container{
@@ -61,11 +73,13 @@
                 padding: 100px 170px 24px;
                 h1{
                     font-size: 2.8rem;
+                    font-weight: 400;
                     letter-spacing: 6px;
                     padding-left: 8px;
                 }
                 p{
                     font-size: 1.8rem;
+                    font-weight: 400;
                     line-height: 32px;
                     padding:0 150px 0 8px;
                 }
@@ -73,8 +87,8 @@
             &__button{
                 padding: 13em 0 0 0;
                 a{
-                    width: 285px;
-                    height: 285px;
+                    width: 275px;
+                    height: 275px;
                     border-radius: 10em;
                     p{
                         font-size: 3.4rem;
